@@ -1,10 +1,7 @@
-import{Text, View, ScrollView} from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { Redirect } from "expo-router";
+import{Text, View} from "react-native";
 
 export default function Index(){
-    return(
-     <View className="flex-1 items-center justify-center bg-white">
-        <Text className="text-2xl font-bold text-blue-500">Hello</Text>
-      </View> 
-    )
+    return <Redirect href="/(root)/(tabs)" />;
+ 
 }
