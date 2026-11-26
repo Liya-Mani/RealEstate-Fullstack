@@ -8,8 +8,11 @@ export default function Index(){
     if(!isLoaded) return null;
 
     //Redirect based on auth state
-    if (isSignedIn) return <Redirect href="/(root)/(tabs)" />;
+    if (isSignedIn) {
+        return <Redirect href="/(root)/(tabs)" />;
 
-    return <Redirect href="/sign-in" />;
+    }
+    
+    return <Redirect href="/(auth)/sign-up" />;
  
 }

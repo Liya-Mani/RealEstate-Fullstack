@@ -10,10 +10,10 @@ export default function AuthRoutesLayout(){
     }
 
     //Redirect based on auth state
-    if (isSignedIn) {
-        return <Redirect href="/" />;
-    }
+    if (!isSignedIn) {
+    return <Redirect href="/(auth)/sign-in" />;
+  }
 
-    return <Stack/>;
+    return <Stack screenOptions={{ headerShown: false }} />;
  
 }

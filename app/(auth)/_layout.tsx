@@ -12,9 +12,9 @@ export default function AuthRoutesLayout(){
 
     //Redirect based on auth state
     if (isSignedIn) {
-        return <Redirect href="/" />;
-    }
+    return <Redirect href="/(root)/(tabs)" />;
+     }
 
-    return <Stack/>;
+    return <Stack screenOptions={{headerShown: false}}/>;
  
 }
