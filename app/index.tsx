@@ -13,6 +13,6 @@ export default function Index(){
 
     }
     
-    return <Redirect href="/(auth)/sign-up" />;
+    return <Redirect href="/(auth)/sign-in" />;
  
 }
